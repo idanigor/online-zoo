@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../assets/styles/normalize.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Online-zoo | Donate</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="wrapper header-wrapper">
+
+			<a href="../index.html" class="logo-link">
+				<h1 class="logo-text">PetStory online</h1>
+				<img src="../assets/icons/bamb.svg" alt="logo" class="logo__bamboo">
+			</a>
+			<nav class="header-nav">
+				<ul class="header-nav-list">
+					<li class="header-nav-item">
+						<a href="../index.html" class="header-nav-link">About</a>
+					</li>
+					<li class="header-nav-item">
+						<a href="#" class="header-nav-link">Map</a>
+					</li>
+					<li class="header-nav-item">
+						<a href="#" class="header-nav-link">Zoos</a>
+					</li>
+					<li class="header-nav-item">
+						<a href="#" class="header-nav-link nav-link-activ">Donate</a>
+					</li>
+					<li class="header-nav-item">
+						<a href="#" class="header-nav-link">Contact us</a>
+					</li>
+				</ul>
+			</nav>
+			<a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks" class="figma-link">
+				<span class="figma-text">Designed by ©</span>
+			</a>
+			<div class="burger-btn-wrapper">
+				<div class="burger-btn-item"></div>
+				<div class="burger-btn-item"></div>
+				<div class="burger-btn-item"></div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="panda-pic"></section>
+		<section class="friend">
+			<div class="wrapper">
+				<h2 class="title">the zoo has officially reopened but we still need your help!</h2>
+				<p class="title-text">Even though the Zoo has been able to reopen, we are at a greatly reduced capacity with
+					educational programs and public
+					and private events cancelled or postponed for additional months. We need you now more than ever to help ensure
+					that we
+					overcome these challenges. We have been actively raising funds in the community, and we are grateful for the
+					generosity.
+					But much more support is still needed, and we need your help! Please consider a gift today – no matter what
+					size – to
+					help us sustain our mission.</pc>
+				<h2 class="subtitle">Donation Information</h2>
+				<div class="friend-container">
+					<h3 class="friend-title">Pick and feed a friend</h3>
+					<p class="friend-subtitle">We know the animals bring you joy, and in these extraordinary times, we’re glad.
+					</p>
+					<div class="panda-container">
+						<div class="panda-number-container">
+							<span class="panda-number">4</span>
+							<span class="panda-number-text">Panda diet for the day.</span>
+						</div>
+						<img class="cross" src="../assets/icons/cross.svg" alt="cross">
+						<img class="panda" src="../assets/icons/panda.svg" alt="panda">
+					</div>
+					<p class="amount">Amount</p>
+					<div class="friend-bar">
+						<div class="main-bar"></div>
+						<div class="bar-box" id="box-5000">
+							<div class="bar-point"></div>
+							<div class="bar-border"></div>
+							<span class="pay-number"><span class="pay-dollar">$</span>5000</span>
+						</div>
+						<div class="bar-box" id="box-2000">
+							<div class="bar-point"></div>
+							<div class="bar-border"></div>
+							<span class="pay-number"><span class="pay-dollar">$</span>2000</span>
+						</div>
+						<div class="bar-box" id="box-1000">
+							<div class="bar-point"></div>
+							<div class="bar-border"></div>
+							<span class="pay-number"><span class="pay-dollar">$</span>1000</span>
+						</div>
+						<div class="bar-box" id="box-500">
+							<div class="bar-point"></div>
+							<div class="bar-border"></div>
+							<span class="pay-number"><span class="pay-dollar">$</span>500</span>
+						</div>
+						<div class="bar-box" id="box-250">
+							<div class="bar-point"></div>
+							<div class="bar-border"></div>
+							<span class="pay-number"><span class="pay-dollar">$</span>250</span>
+						</div>
+						<div class="bar-box" id="box-100">
+							<div class="bar-point"></div>
+							<div class="bar-border box-active"></div>
+							<span class="pay-number box-active"><span class="pay-dollar">$</span>100</span>
+						</div>
+						<div class="bar-box" id="box-50">
+							<div class="bar-point"></div>
+							<div class="bar-border"></div>
+							<span class="pay-number"><span class="pay-dollar">$</span>50</span>
+						</div>
+						<div class="bar-box" id="box-25">
+							<div class="bar-point"></div>
+							<div class="bar-border"></div>
+							<span class="pay-number"><span class="pay-dollar">$</span>25</span>
+						</div>
+					</div>
+					<div class="another-container">
+						<input class="another" value="100" type="number" name="another" placeholder="Another amount" id="another" min="0"
+							max="9999" step="1"  onkeyup="lim(this)" onkeydown="lim(this)">
+						<div class="another-dollar">$</div>
+					</div>
+					<div class="radio-container">
+						<input class="radio" type="radio" name="radio-another" id="radio-monthly">
+						<span class="radio-label">Monthly</span>
+						<input class="radio" type="radio" name="radio-another" id="radio-once" checked>
+						<span class="radio-label">Once</span>
+					</div>
+					<button class="button button-another">
+						<a href="#" class="button-link">Feed a friend now</a>
+					</button>
+					<p class="share">Share with your friends on social networks</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="wrapper wrapper-footer">
+			<div class="footer-row1-container">
+
+				<a href="../index.html" class="logo-link">
+					<p class="logo-text logo-text-footer">PetStory online</p>
+					<img src="../assets/icons/bamb.svg" alt="logo" class="logo__bamboo">
+				</a>
+
+				<div class="footer-subscribe-wrapper">
+					<h4 class="footer-subscribe-title">Subscribe to our news</h4>
+					<input class="footer-input-mail" required placeholder="Enter your email" type="email" name="input-mail"
+						id="input-mail">
+					<button class="button-submit">
+						<a href="#" class="button-submit-link">Submit</a>
+					</button>
+				</div>
+			</div>
+			<div class="footer-row2-container">
+				<div class="footer-button-and-social">
+					<div class="button-footer-wrapper">
+						<button class="button btn-footer-donate">
+							<a href="#" class="button-link button-link-donate">donate for volunteers</a>
+						</button>
+					</div>
+					<div class="footer-social">
+						<ul class="footer-social-list">
+							<li class="footer-social-item">
+								<a href="https://www.facebook.com/" class="footer-social-link">
+									<div class="footer-social-ico-box">
+										<div class="footer-social-ico facebook"></div>
+									</div>
+									<span class="footer-social-text">Facebook</span>
+
+								</a>
+							</li>
+							<li class="footer-social-item">
+								<a href="https://twitter.com/" class="footer-social-link">
+									<div class="footer-social-ico-box">
+										<div class="footer-social-ico twitter"></div>
+									</div>
+									<span class="footer-social-text">Twitter</span>
+								</a>
+							</li>
+							<li class="footer-social-item">
+								<a href="https://www.instagram.com/" class="footer-social-link">
+									<div class="footer-social-ico-box">
+										<div class="footer-social-ico instagram"></div>
+									</div>
+									<span class="footer-social-text">Instagram</span>
+								</a>
+							</li>
+							<li class="footer-social-item">
+								<a href="https://www.youtube.com/" class="footer-social-link">
+									<div class="footer-social-ico-box">
+										<div class="footer-social-ico youtube"></div>
+									</div>
+									<span class="footer-social-text">YouTube</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-nav-and-designed">
+					<nav class="footer-nav">
+						<ul class="footer-nav-list">
+							<li class="footer-nav-item">
+								<a href="../index.html" class="footer-nav-link">About</a>
+							</li>
+							<li class="footer-nav-item">
+								<a href="#" class="footer-nav-link">Map</a>
+							</li>
+							<li class="footer-nav-item">
+								<a href="#" class="footer-nav-link">Zoos</a>
+							</li>
+							<li class="footer-nav-item">
+								<a href="#" class="footer-nav-link">Contact us</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="footer-designed">
+						<p class="footer-designed-text">Designed by Alisa Samborskaya</p>
+						<p class="footer-designed-text">©RSSchool & ©Yem Digital 2021</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="burger-menu">
+		<div class="burger-logo">
+			<a href="../index.html" class="logo-link">
+				<p class="logo-text">PetStory online</p>
+				<img src="../assets/icons/bamb_or.svg" alt="logo" class="logo__bamboo">
+			</a>
+		</div>
+		<nav class="burger-nav">
+			<ul class="burger-nav-list">
+				<li class="burger-nav-item">
+					<a href="../index.html" class="burger-nav-link">About</a>
+				</li>
+				<li class="burger-nav-item">
+					<a href="#" class="burger-nav-link">Map</a>
+				</li>
+				<li class="burger-nav-item">
+					<a href="#" class="burger-nav-link">Zoos</a>
+				</li>
+				<li class="burger-nav-item">
+					<a href="index.html" class="burger-nav-link nav-link-activ">Donate</a>
+				</li>
+				<li class="burger-nav-item">
+					<a href="#" class="burger-nav-link">Contact us</a>
+				</li>
+				<li class="burger-nav-item">
+					<a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks" class="burger-nav-link">Designed
+						by ©</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="burger-cross"></div>
+	</div>
+	<div id="dark-area" class="dark-area"></div>
+	<script src="script.js"></script>
+</body>
+
+</html>
